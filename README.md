@@ -1,2 +1,2 @@
 # Landing Page
-Primeira Landing Page - Desafio DIO.me
+Primeira Landing Page - Projeto pessoal

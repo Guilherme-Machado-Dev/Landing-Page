@@ -8,15 +8,15 @@
 /* Fonte e cores principais */
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background-color: #f4f6f9;
-  color: #333;
+  background-color: #121212; /* fundo escuro */
+  color: #e0e0e0;            /* texto claro */
   line-height: 1.6;
 }
 
 /* Banner */
 .banner {
-  background: linear-gradient(135deg, #4a90e2, #7b4397);
-  color: #fff;
+  background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
+  color: #00bcd4; /* azul vibrante para destaque */
   text-align: center;
   padding: 60px 20px;
 }
@@ -29,21 +29,11 @@ body {
 .banner p {
   font-size: 1.2rem;
   margin-bottom: 30px;
-}
-
-.banner button {
-  background-color: #fff;
-  color: #4a90e2;
-  border: none;
-  padding: 12px 24px;
-  font-size: 1rem;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.3s;
+  color: #b0bec5;
 }
 
 .banner button:hover {
-  background-color: #4a90e2;
+  background-color: #0097a7;
   color: #fff;
 }
 
@@ -57,7 +47,7 @@ section {
 }
 
 h2 {
-  color: #4a90e2;
+  color: #ff9800; /* laranja para contraste */
   margin-bottom: 15px;
 }
 
@@ -69,16 +59,18 @@ h2 {
 }
 
 .module {
-  background-color: #e6e6fa;
+  background-color: #1e1e1e;
   padding: 12px;
   border-radius: 5px;
   font-weight: bold;
+  color: #cfd8dc;
+  border-left: 4px solid #00bcd4;
 }
 
 /* Transforme o mundo */
 #transform-world {
-  background-color: #7b4397;
-  color: #fff;
+  background-color: #212121;
+  color: #ff9800;
   text-align: center;
   padding: 30px;
   font-size: 1.5rem;
@@ -91,18 +83,19 @@ h2 {
   max-width: 100%;
   border-radius: 8px;
   margin: 20px 0;
+  border: 2px solid #00bcd4;
 }
 
 /* Footer */
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #1f1f1f;
+  color: #b0bec5;
   text-align: center;
   padding: 20px;
 }
 
 footer a {
-  color: #4a90e2;
+  color: #00bcd4;
   text-decoration: none;
 }
 

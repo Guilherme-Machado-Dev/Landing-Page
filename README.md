@@ -15,3 +15,4 @@ Este repositório contém uma landing page criada com **HTML e CSS**, publicada 
 ## Como visualizar
 1. Abra o link acima para ver a página publicada.
 2. Ou clone este repositório e abra o arquivo `index.html` no seu navegador. 
+ 

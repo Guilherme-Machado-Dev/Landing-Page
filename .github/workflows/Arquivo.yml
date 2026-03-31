@@ -1,0 +1,40 @@
+name: Atualizar Screenshot
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v3
+
+      - name: Instalar Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Gerar screenshot com Puppeteer
+        run: |
+          npm install puppeteer
+          node -e "
+          const puppeteer = require('puppeteer');
+          (async () => {
+            const browser = await puppeteer.launch();
+            const page = await browser.newPage();
+            await page.goto('https://guilherme-machado-dev.github.io/Landing-Page/', {waitUntil: 'networkidle2'});
+            await page.screenshot({path: 'screenshot.png', fullPage: true});
+            await browser.close();
+          })();
+          "
+
+      - name: Commit screenshot
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'actions@github.com'
+          git add screenshot.png
+          git commit -m 'Atualizar screenshot automática'
+          git push
